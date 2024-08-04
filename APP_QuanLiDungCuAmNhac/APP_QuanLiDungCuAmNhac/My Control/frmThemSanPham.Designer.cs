@@ -78,7 +78,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.52557F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.67182F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.81454F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
@@ -274,7 +274,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.txt_MoTa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MoTa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_MoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_MoTa.Location = new System.Drawing.Point(746, 76);
+            this.txt_MoTa.Location = new System.Drawing.Point(747, 76);
             this.txt_MoTa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_MoTa.Name = "txt_MoTa";
             this.txt_MoTa.PasswordChar = '\0';
@@ -308,7 +308,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.txt_Url.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Url.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_Url.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Url.Location = new System.Drawing.Point(746, 152);
+            this.txt_Url.Location = new System.Drawing.Point(747, 152);
             this.txt_Url.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Url.Name = "txt_Url";
             this.txt_Url.PasswordChar = '\0';
@@ -342,7 +342,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.txt_TrangThai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TrangThai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_TrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TrangThai.Location = new System.Drawing.Point(746, 225);
+            this.txt_TrangThai.Location = new System.Drawing.Point(747, 225);
             this.txt_TrangThai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_TrangThai.Name = "txt_TrangThai";
             this.txt_TrangThai.PasswordChar = '\0';
@@ -374,7 +374,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             // 
             this.pictureBox_HinhAnh.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox_HinhAnh.ImageRotate = 0F;
-            this.pictureBox_HinhAnh.Location = new System.Drawing.Point(745, 283);
+            this.pictureBox_HinhAnh.Location = new System.Drawing.Point(746, 283);
             this.pictureBox_HinhAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox_HinhAnh.Name = "pictureBox_HinhAnh";
             this.pictureBox_HinhAnh.Size = new System.Drawing.Size(187, 90);
@@ -396,7 +396,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.txt_DonGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DonGia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_DonGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_DonGia.Location = new System.Drawing.Point(746, 9);
+            this.txt_DonGia.Location = new System.Drawing.Point(747, 9);
             this.txt_DonGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.PasswordChar = '\0';
@@ -473,7 +473,6 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmThemSanPham";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThemSanPham";
             this.Load += new System.EventHandler(this.frmThemSanPham_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
