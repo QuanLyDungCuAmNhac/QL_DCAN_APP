@@ -86,8 +86,37 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
                     }
                 }
 
-                MessageBox.Show("Thanh toán thành công!");
-
+                // Hiển thị thông báo hỏi người dùng có muốn in hóa đơn không
+                DialogResult result = MessageBox.Show("Bạn có muốn in hóa đơn không?", "In hóa đơn", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    // Tạo danh sách HoaDonDTO từ DataGridView
+                    List<HoaDonDTO> hoaDonData = new List<HoaDonDTO>();
+                    foreach (DataGridViewRow row in HoaDonDataGridView.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            HoaDonDTO dto = new HoaDonDTO
+                            {
+                                TenSP = row.Cells["TenSP"].Value.ToString(),
+                                SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
+                                DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value),
+                                // Tính tổng tiền
+                                TongTien = Convert.ToInt32(row.Cells["SoLuong"].Value) * Convert.ToDecimal(row.Cells["DonGia"].Value),
+                            };
+                            hoaDonData.Add(dto);
+                        }
+                    }
+                    // Truyền dữ liệu vào form Report
+                    Report report = new Report(hoaDonData, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text);
+                    report.ShowDialog();
+                    MessageBox.Show("Thanh toán thành công!");
+                }
+                else
+                {
+                    // Thông báo thanh toán thành công
+                    MessageBox.Show("Thanh toán thành công!");
+                }
                 OnSaveSuccess?.Invoke();
                 this.Close(); // Đóng form sau khi thanh toán thành công
             }
@@ -107,26 +136,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
 
         private void btnXuatHoaDon_Click(object sender, EventArgs e)
         {
-            // Tạo danh sách HoaDonDTO từ DataGridView
-            List<HoaDonDTO> hoaDonData = new List<HoaDonDTO>();
-            foreach (DataGridViewRow row in HoaDonDataGridView.Rows)
-            {
-                if (!row.IsNewRow)
-                {
-                    HoaDonDTO dto = new HoaDonDTO
-                    {
-                        TenSP = row.Cells["TenSP"].Value.ToString(),
-                        SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
-                        DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value),
-                        // Tính tổng tiền
-                        TongTien = Convert.ToInt32(row.Cells["SoLuong"].Value) * Convert.ToDecimal(row.Cells["DonGia"].Value),                    
-                    };
-                    hoaDonData.Add(dto);
-                }
-            }
-            // Truyền dữ liệu vào form Report
-            Report report = new Report(hoaDonData,txtTenKH.Text,txtDiaChi.Text,txtSDT.Text);
-            report.ShowDialog();
+           
         }
     }
 }

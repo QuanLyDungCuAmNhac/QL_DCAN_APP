@@ -40,7 +40,6 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btnXuatHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -166,21 +165,6 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.Value = new System.DateTime(2024, 7, 28, 17, 47, 54, 0);
             // 
-            // btnXuatHoaDon
-            // 
-            this.btnXuatHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuatHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuatHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXuatHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXuatHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnXuatHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnXuatHoaDon.Location = new System.Drawing.Point(437, 485);
-            this.btnXuatHoaDon.Name = "btnXuatHoaDon";
-            this.btnXuatHoaDon.Size = new System.Drawing.Size(137, 42);
-            this.btnXuatHoaDon.TabIndex = 25;
-            this.btnXuatHoaDon.Text = "Xuất Hóa đơn";
-            this.btnXuatHoaDon.Click += new System.EventHandler(this.btnXuatHoaDon_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -215,9 +199,9 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.label7.Location = new System.Drawing.Point(314, 379);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 23);
+            this.label7.Size = new System.Drawing.Size(54, 23);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Địa chỉ";
+            this.label7.Text = "Email";
             // 
             // txtSDT
             // 
@@ -249,7 +233,6 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnXuatHoaDon);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btn_ThanhToan);
             this.Controls.Add(this.label6);
@@ -284,7 +267,6 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private Guna.UI2.WinForms.Guna2Button btnXuatHoaDon;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.TextBox txtDiaChi;
