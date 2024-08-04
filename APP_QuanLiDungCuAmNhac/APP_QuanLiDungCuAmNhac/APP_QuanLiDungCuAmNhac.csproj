@@ -197,6 +197,12 @@
     <Compile Include="UserControls\ThongKeDoanhThu.Designer.cs">
       <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ThongKeSanPhamBanRa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ThongKeSanPhamBanRa.Designer.cs">
+      <DependentUpon>ThongKeSanPhamBanRa.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UC_BanHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -356,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ThongKeDoanhThu.resx">
       <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ThongKeSanPhamBanRa.resx">
+      <DependentUpon>ThongKeSanPhamBanRa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>

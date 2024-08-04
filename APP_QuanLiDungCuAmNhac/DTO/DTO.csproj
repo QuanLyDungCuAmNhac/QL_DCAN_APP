@@ -118,6 +118,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_DCAN.dbml</DependentUpon>
     </Compile>
+    <Compile Include="SanPhamBanRaDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
