@@ -11,7 +11,23 @@ namespace BLL
     public class BLLHoaDon
     {
         private DALHoaDon dalHoaDon = new DALHoaDon();
-
+        public List<HoaDon> LoadHD()
+        {
+            return dalHoaDon.LoadHD();
+        }
+        public List<HoaDon> FilterHD(int? maHD, int? maKH)
+        {
+            return dalHoaDon.FilterHD(maHD, maKH);
+        }
+        public void UpdateTinhTrang(int maHD, string tinhTrangMoi)
+        {
+            // Tìm hóa đơn dựa trên MaHD
+            dalHoaDon.UpdateTinhTrang(maHD, tinhTrangMoi);
+        }
+        public void DeleteHD(int maHD)
+        {
+            dalHoaDon.DeleteHD(maHD);
+        }
         public int SaveHoaDon(HoaDon hoaDon)
         {
             return dalHoaDon.SaveHoaDon(hoaDon);
@@ -24,6 +40,10 @@ namespace BLL
         public List<DoanhThuTheoNgay> GetDoanhThuTheoThang(int month, int year)
         {
             return dalHoaDon.GetDoanhThuTheoThang(month, year);
+        }
+        public List<ChiTietHoaDon> GetInvoiceDetails(int maHD)
+        {
+            return dalHoaDon.GetInvoiceDetails(maHD);
         }
     }
 }

@@ -50,5 +50,11 @@ namespace APP_QuanLiDungCuAmNhac.UserControls
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            UC_DonHang uc = new UC_DonHang();
+            _mainForm.AddControlsToPanel(uc);
+        }
     }
 }

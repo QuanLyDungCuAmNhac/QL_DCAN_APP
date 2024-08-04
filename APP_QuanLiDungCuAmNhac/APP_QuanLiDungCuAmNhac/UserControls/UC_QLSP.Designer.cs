@@ -46,6 +46,7 @@
             this.btnKhuyenMai = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,6 +65,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Controls.Add(this.btnKhuyenMai);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 521);
             this.panel1.Name = "panel1";
@@ -180,10 +182,10 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.guna2Button1);
             this.panel6.Controls.Add(this.btnSanPham);
             this.panel6.Controls.Add(this.btnQLLSP);
             this.panel6.Controls.Add(this.btnQLTH);
-            this.panel6.Controls.Add(this.btnKhuyenMai);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
@@ -255,7 +257,7 @@
             this.btnKhuyenMai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnKhuyenMai.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnKhuyenMai.ForeColor = System.Drawing.Color.White;
-            this.btnKhuyenMai.Location = new System.Drawing.Point(90, 37);
+            this.btnKhuyenMai.Location = new System.Drawing.Point(672, 11);
             this.btnKhuyenMai.Name = "btnKhuyenMai";
             this.btnKhuyenMai.Size = new System.Drawing.Size(406, 102);
             this.btnKhuyenMai.TabIndex = 32;
@@ -282,6 +284,24 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(576, 521);
             this.panel7.TabIndex = 27;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2Button1.BorderRadius = 30;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(90, 43);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(406, 102);
+            this.guna2Button1.TabIndex = 33;
+            this.guna2Button1.Text = "Đơn Hàng";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // UC_QLSP
             // 
@@ -328,5 +348,6 @@
         private Guna.UI2.WinForms.Guna2Button btnKhuyenMai;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Panel panel7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

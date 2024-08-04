@@ -9,6 +9,40 @@ namespace DAL
     public class DALHoaDon
     {
         QL_DCANDataContext qldcan = new QL_DCANDataContext();
+        public List<HoaDon> LoadHD()
+        {
+            return qldcan.HoaDons.Select(nv => nv).ToList<HoaDon>();
+        }
+        public void UpdateTinhTrang(int maHD, string tinhTrangMoi)
+        {
+            // Tìm hóa đơn dựa trên MaHD
+            var hoaDon = qldcan.HoaDons.SingleOrDefault(hd => hd.MaHD == maHD);
+
+            if (hoaDon != null)
+            {
+                // Cập nhật giá trị của thuộc tính TinhTrang
+                hoaDon.TinhTrang = tinhTrangMoi;
+
+                // Lưu thay đổi vào cơ sở dữ liệu
+                qldcan.SubmitChanges();
+            }
+            else
+            {
+                throw new Exception("Hóa đơn không tồn tại.");
+            }
+        }
+        public List<HoaDon> FilterHD(int? maHD, int? maKH)
+        {
+            var allHoaDons = LoadHD(); // Lấy tất cả hóa đơn
+
+           
+            var filteredHoaDons = allHoaDons.Where(hd =>
+                (!maHD.HasValue || hd.MaHD == maHD.Value) &&
+                (!maKH.HasValue || hd.MaKH == maKH.Value)
+            ).ToList();
+
+            return filteredHoaDons;
+        }
         public int SaveHoaDon(HoaDon hoaDon)
         {
 
@@ -52,6 +86,24 @@ namespace DAL
         {
             public int Ngay { get; set; }
             public decimal DoanhThu { get; set; }
+        }
+        public void DeleteHD(int maHD)
+        {
+            var hoaDon = qldcan.HoaDons.SingleOrDefault(hd => hd.MaHD == maHD);
+            if (hoaDon != null)
+            {
+                qldcan.HoaDons.DeleteOnSubmit(hoaDon);
+                qldcan.SubmitChanges();
+            }
+        }
+        public List<ChiTietHoaDon> GetInvoiceDetails(int maHD)
+        {
+             var details = from d in qldcan.ChiTietHoaDons
+                              where d.MaHD == maHD
+                              select d;
+
+                return details.ToList();
+            
         }
     }
 }
