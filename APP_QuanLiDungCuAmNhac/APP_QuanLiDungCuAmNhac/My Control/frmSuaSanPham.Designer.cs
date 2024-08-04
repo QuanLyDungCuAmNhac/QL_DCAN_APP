@@ -113,7 +113,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.52557F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.67182F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.81454F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 268F));
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
@@ -193,7 +193,7 @@
             this.txt_TenSP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenSP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_TenSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TenSP.Location = new System.Drawing.Point(291, 152);
+            this.txt_TenSP.Location = new System.Drawing.Point(290, 152);
             this.txt_TenSP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenSP.Name = "txt_TenSP";
             this.txt_TenSP.PasswordChar = '\0';
@@ -214,7 +214,7 @@
             this.cbo_MaLoai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_MaLoai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbo_MaLoai.ItemHeight = 40;
-            this.cbo_MaLoai.Location = new System.Drawing.Point(290, 8);
+            this.cbo_MaLoai.Location = new System.Drawing.Point(289, 8);
             this.cbo_MaLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbo_MaLoai.Name = "cbo_MaLoai";
             this.cbo_MaLoai.Size = new System.Drawing.Size(219, 46);
@@ -232,7 +232,7 @@
             this.cbo_MaTH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_MaTH.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbo_MaTH.ItemHeight = 40;
-            this.cbo_MaTH.Location = new System.Drawing.Point(290, 75);
+            this.cbo_MaTH.Location = new System.Drawing.Point(289, 75);
             this.cbo_MaTH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbo_MaTH.Name = "cbo_MaTH";
             this.cbo_MaTH.Size = new System.Drawing.Size(219, 46);
@@ -252,7 +252,7 @@
             this.txt_SoLuong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SoLuong.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_SoLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_SoLuong.Location = new System.Drawing.Point(291, 225);
+            this.txt_SoLuong.Location = new System.Drawing.Point(290, 225);
             this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.PasswordChar = '\0';
@@ -277,7 +277,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(556, 17);
+            this.label6.Location = new System.Drawing.Point(554, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(99, 28);
             this.label6.TabIndex = 16;
@@ -288,7 +288,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(556, 84);
+            this.label7.Location = new System.Drawing.Point(554, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 28);
             this.label7.TabIndex = 17;
@@ -308,7 +308,7 @@
             this.txt_MoTa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MoTa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_MoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_MoTa.Location = new System.Drawing.Point(749, 76);
+            this.txt_MoTa.Location = new System.Drawing.Point(747, 76);
             this.txt_MoTa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_MoTa.Name = "txt_MoTa";
             this.txt_MoTa.PasswordChar = '\0';
@@ -322,7 +322,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(556, 160);
+            this.label8.Location = new System.Drawing.Point(554, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 28);
             this.label8.TabIndex = 18;
@@ -342,7 +342,7 @@
             this.txt_Url.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Url.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_Url.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Url.Location = new System.Drawing.Point(749, 152);
+            this.txt_Url.Location = new System.Drawing.Point(747, 152);
             this.txt_Url.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Url.Name = "txt_Url";
             this.txt_Url.PasswordChar = '\0';
@@ -356,7 +356,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(556, 233);
+            this.label9.Location = new System.Drawing.Point(554, 233);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 28);
             this.label9.TabIndex = 19;
@@ -376,7 +376,7 @@
             this.txt_TrangThai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TrangThai.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_TrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TrangThai.Location = new System.Drawing.Point(749, 225);
+            this.txt_TrangThai.Location = new System.Drawing.Point(747, 225);
             this.txt_TrangThai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_TrangThai.Name = "txt_TrangThai";
             this.txt_TrangThai.PasswordChar = '\0';
@@ -396,7 +396,7 @@
             this.btn_ChonHinh.FillColor = System.Drawing.Color.Navy;
             this.btn_ChonHinh.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btn_ChonHinh.ForeColor = System.Drawing.Color.White;
-            this.btn_ChonHinh.Location = new System.Drawing.Point(556, 297);
+            this.btn_ChonHinh.Location = new System.Drawing.Point(554, 297);
             this.btn_ChonHinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ChonHinh.Name = "btn_ChonHinh";
             this.btn_ChonHinh.Size = new System.Drawing.Size(178, 62);
@@ -408,7 +408,7 @@
             // 
             this.pictureBox_HinhAnh.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox_HinhAnh.ImageRotate = 0F;
-            this.pictureBox_HinhAnh.Location = new System.Drawing.Point(748, 283);
+            this.pictureBox_HinhAnh.Location = new System.Drawing.Point(746, 283);
             this.pictureBox_HinhAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox_HinhAnh.Name = "pictureBox_HinhAnh";
             this.pictureBox_HinhAnh.Size = new System.Drawing.Size(187, 90);
@@ -430,7 +430,7 @@
             this.txt_DonGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DonGia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_DonGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_DonGia.Location = new System.Drawing.Point(749, 9);
+            this.txt_DonGia.Location = new System.Drawing.Point(747, 9);
             this.txt_DonGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.PasswordChar = '\0';
@@ -469,6 +469,7 @@
             this.ClientSize = new System.Drawing.Size(1013, 507);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "frmSuaSanPham";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSuaSanPham";
             this.Load += new System.EventHandler(this.frmSuaSanPham_Load);
             this.guna2Panel1.ResumeLayout(false);

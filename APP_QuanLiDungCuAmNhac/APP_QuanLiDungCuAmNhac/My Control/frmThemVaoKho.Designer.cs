@@ -62,9 +62,9 @@
             this.guna2GroupBox1.Controls.Add(this.CBBNCC);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(930, 112);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(930, 54);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(213, 369);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(213, 427);
             this.guna2GroupBox1.TabIndex = 9;
             this.guna2GroupBox1.Text = "Nhà cung cấp";
             // 
@@ -87,18 +87,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 403);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 407);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 16);
+            this.label2.Size = new System.Drawing.Size(164, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Sản phẩm nhập";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 83);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Sản phẩm";
             // 
@@ -236,7 +238,7 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DGVSanPham.DefaultCellStyle = dataGridViewCellStyle7;
             this.DGVSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DGVSanPham.Location = new System.Drawing.Point(12, 112);
+            this.DGVSanPham.Location = new System.Drawing.Point(12, 54);
             this.DGVSanPham.Name = "DGVSanPham";
             this.DGVSanPham.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -250,7 +252,7 @@
             this.DGVSanPham.RowHeadersVisible = false;
             this.DGVSanPham.RowHeadersWidth = 51;
             this.DGVSanPham.RowTemplate.Height = 24;
-            this.DGVSanPham.Size = new System.Drawing.Size(893, 276);
+            this.DGVSanPham.Size = new System.Drawing.Size(893, 334);
             this.DGVSanPham.TabIndex = 5;
             this.DGVSanPham.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DGVSanPham.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -300,30 +302,34 @@
             // 
             // btnDong
             // 
+            this.btnDong.BorderRadius = 10;
             this.btnDong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDong.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(124)))), ((int)(((byte)(241)))));
+            this.btnDong.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold);
             this.btnDong.ForeColor = System.Drawing.Color.White;
-            this.btnDong.Location = new System.Drawing.Point(1013, 804);
+            this.btnDong.Location = new System.Drawing.Point(923, 708);
             this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(145, 29);
+            this.btnDong.Size = new System.Drawing.Size(207, 60);
             this.btnDong.TabIndex = 10;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnThem
             // 
+            this.btnThem.BorderRadius = 10;
             this.btnThem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnThem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(124)))), ((int)(((byte)(241)))));
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold);
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(820, 804);
+            this.btnThem.Location = new System.Drawing.Point(923, 613);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(145, 29);
+            this.btnThem.Size = new System.Drawing.Size(207, 65);
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -332,8 +338,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(252)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(1170, 865);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(228)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1170, 797);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.guna2GroupBox1);

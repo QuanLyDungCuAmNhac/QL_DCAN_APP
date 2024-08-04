@@ -29,5 +29,19 @@ namespace DAL
             return doanhThuThang;
         }
 
+        public List<SanPhamBanRaDTO> GetSanPhamBanRa()
+        {
+            var query = from cthd in qldc.ChiTietHoaDons
+                        join sp in qldc.SanPhams on cthd.MaSP equals sp.MaSP
+                        group cthd by new { cthd.MaSP, sp.TenSP } into g
+                        select new SanPhamBanRaDTO
+                        {
+                            MaSP = g.Key.MaSP,
+                            TenSP = g.Key.TenSP,
+                            SoLuong = g.Sum(x => x.SoLuong)
+                        };
+
+            return query.ToList();
+        }
     }
 }

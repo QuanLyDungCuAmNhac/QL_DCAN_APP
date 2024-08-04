@@ -118,7 +118,7 @@
             this.btnQLTH.Name = "btnQLTH";
             this.btnQLTH.Size = new System.Drawing.Size(406, 101);
             this.btnQLTH.TabIndex = 31;
-            this.btnQLTH.Text = "Thống kê doanh thu các tháng trong năm";
+            this.btnQLTH.Text = "Thống kê doanh thu";
             this.btnQLTH.Click += new System.EventHandler(this.btnQLTH_Click);
             // 
             // panel4
@@ -126,7 +126,7 @@
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(517, 20);
+            this.panel4.Location = new System.Drawing.Point(516, 20);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(104, 93);
             this.panel4.TabIndex = 23;
@@ -158,14 +158,15 @@
             this.btnQLLSP.Name = "btnQLLSP";
             this.btnQLLSP.Size = new System.Drawing.Size(406, 102);
             this.btnQLLSP.TabIndex = 30;
-            this.btnQLLSP.Text = "Thống kê lợi nhuận";
+            this.btnQLLSP.Text = "Thống kê sản phẩm bán ra";
+            this.btnQLLSP.Click += new System.EventHandler(this.btnQLLSP_Click);
             // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(193, 20);
+            this.panel3.Location = new System.Drawing.Point(192, 20);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(104, 93);
             this.panel3.TabIndex = 22;
@@ -215,7 +216,7 @@
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Location = new System.Drawing.Point(354, 20);
+            this.panel5.Location = new System.Drawing.Point(353, 20);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(104, 93);
             this.panel5.TabIndex = 24;
@@ -238,7 +239,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.61111F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.38889F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);

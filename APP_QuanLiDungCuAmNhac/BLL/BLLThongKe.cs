@@ -18,5 +18,9 @@ namespace BLL
         {
             return ThongKeDAL.LayDoanhThuTheoThang(nam);
         }
+        public List<SanPhamBanRaDTO> GetSanPhamBanRa()
+        {
+            return ThongKeDAL.GetSanPhamBanRa();
+        }
     }
 }

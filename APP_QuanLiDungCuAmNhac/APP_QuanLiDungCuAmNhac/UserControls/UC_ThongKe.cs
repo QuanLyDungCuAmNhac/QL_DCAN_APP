@@ -25,5 +25,11 @@ namespace APP_QuanLiDungCuAmNhac.UserControls
             ThongKeDoanhThu uc = new ThongKeDoanhThu();
             _mainForm.AddControlsToPanel(uc);
         }
+
+        private void btnQLLSP_Click(object sender, EventArgs e)
+        {
+            ThongKeSanPhamBanRa uc = new ThongKeSanPhamBanRa();
+            _mainForm.AddControlsToPanel(uc);
+        }
     }
 }
