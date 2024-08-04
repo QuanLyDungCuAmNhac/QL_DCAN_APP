@@ -13,7 +13,7 @@ using DTO;
 namespace APP_QuanLiDungCuAmNhac.My_Control
 {
     public partial class frmXacNhanThanhToan : Form
-    {
+    {  
         BLLNhanVien bllnv = new BLLNhanVien();
         BLLHoaDon bllHoaDon = new BLLHoaDon();
         BLLSanPham bllsp = new BLLSanPham();
@@ -65,8 +65,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
                     TongTien = decimal.Parse(TongTienTextBox.Text.Replace(" đ", "").Replace(".", ""), NumberStyles.Currency, new CultureInfo("vi-VN"))
                 };
 
-                int maHD = bllHoaDon.SaveHoaDon(hoaDon);
-
+                int maHD = bllHoaDon.SaveHoaDon(hoaDon);         
                 // Lưu chi tiết hóa đơn
                 foreach (DataGridViewRow row in HoaDonDataGridView.Rows)
                 {
@@ -77,7 +76,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
                             MaHD = maHD,
                             MaSP = GetMaSP(row.Cells["TenSP"].Value.ToString()), // Bạn cần có phương thức để lấy MaSP từ tên sản phẩm
                             SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
-                            DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value)
+                            DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value),
                         };
 
                         if (!bllHoaDon.SaveChiTietHoaDon(chiTietHoaDon))
@@ -88,6 +87,7 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
                 }
 
                 MessageBox.Show("Thanh toán thành công!");
+
                 OnSaveSuccess?.Invoke();
                 this.Close(); // Đóng form sau khi thanh toán thành công
             }
@@ -103,6 +103,30 @@ namespace APP_QuanLiDungCuAmNhac.My_Control
             var products = bllsp.LoadSP();
             var product = products.FirstOrDefault(p => p.TenSP == tenSP);
             return product?.MaSP ?? 0;
+        }
+
+        private void btnXuatHoaDon_Click(object sender, EventArgs e)
+        {
+            // Tạo danh sách HoaDonDTO từ DataGridView
+            List<HoaDonDTO> hoaDonData = new List<HoaDonDTO>();
+            foreach (DataGridViewRow row in HoaDonDataGridView.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    HoaDonDTO dto = new HoaDonDTO
+                    {
+                        TenSP = row.Cells["TenSP"].Value.ToString(),
+                        SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
+                        DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value),
+                        // Tính tổng tiền
+                        TongTien = Convert.ToInt32(row.Cells["SoLuong"].Value) * Convert.ToDecimal(row.Cells["DonGia"].Value),                    
+                    };
+                    hoaDonData.Add(dto);
+                }
+            }
+            // Truyền dữ liệu vào form Report
+            Report report = new Report(hoaDonData,txtTenKH.Text,txtDiaChi.Text,txtSDT.Text);
+            report.ShowDialog();
         }
     }
 }
