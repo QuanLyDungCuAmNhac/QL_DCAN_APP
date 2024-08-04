@@ -87,12 +87,7 @@ namespace APP_QuanLiDungCuAmNhac.UserControls
                 int maHD = (int)datagridviewHoaDon.Rows[e.RowIndex].Cells["MaHD"].Value;
                 var invoiceDetails = bllhd.GetInvoiceDetails(maHD);
 
-                // Tạo form mới để hiển thị chi tiết hóa đơn
-                frmXemChiTietHD frm = new frmXemChiTietHD();
-                frm.DataGridViewCTHD.DataSource = invoiceDetails;
-
-                frm.Size = new Size(600, 400);
-                frm.ShowDialog();
+              
             }
         }
     }
